@@ -20,6 +20,93 @@ Example for printShape("Diamond", 5, "*");
  ***
   * 
 */
-function printShape(shape, height, character) {
+
+function square(height, character) {
   
+  let h = height;
+
+  while (h > 0){
+    
+    console.log(character.repeat(height));
+    
+    h--;
+  }
+   
+  console.log("\n")
+};
+
+function triangle(height, character) {
+  
+  let h = height;
+  
+  let len = 1;
+
+  while (h > 0){
+    
+    console.log(character.repeat(len));
+    
+    h--;
+   
+    len++;
+  }
+  
+  console.log("\n")
+};
+
+function diamond(height, character) {
+  
+  let h = 1;
+ 
+  let floor = Math.floor(height/2);
+  
+  while (floor >= 0){
+    
+    console.log(' '.repeat(floor) + character.repeat(h) + ' '.repeat(floor));
+ 
+    h += 2;
+   
+    floor --;
+  }
+
+  h -=2;
+  
+  floor++; 
+  
+  while(h > 1){
+  
+    h -= 2;
+    
+    floor++;
+    
+    console.log(' '.repeat(floor) + character.repeat(h) + ' '.repeat(floor));
+  }
+ 
+  console.log("\n")
+};
+
+function printShape(shape, height, character) {
+    
+  switch (shape) {
+
+    case "square":
+      square(height, character)
+      break;
+    
+    case "triangle":
+      triangle(height, character)
+      break;
+    
+    case "diamond":
+      diamond(height, character);
+      break;
+    
+    default:
+      console.log("Only valid shapes may be used. Valid shapes are 'square', 'triangle' or 'diamond'.")
+  }
 }
+
+printShape("square", 2, "%");
+
+printShape("triangle", 6, "$");
+
+printShape("diamond", 10, "*");
