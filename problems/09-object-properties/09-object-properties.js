@@ -2,6 +2,16 @@
 Define function objectProperties(someObj)
 Print every property and it's value. */
 
+let testObj = {
+
+    name:"Tanique",
+
+    age:28,
+
+    gender:"Female",
+};
+
+// For when you know what properties an object will contain and to set up advanced opertions
 function objectProperties(someObj) {
 
     let name = someObj.name;
@@ -14,13 +24,11 @@ function objectProperties(someObj) {
     
 }
 
-let testObj = {
+// For when you don't neccesarily know what properties an object has or if you want the easy way
+// function objectProperties(someObj) {
 
-    name:"Tanique",
-
-    age:28,
-
-    gender:"Female",
-};
+//     return Object.values(someObj);
+    
+// }
 
 console.log(objectProperties(testObj));
