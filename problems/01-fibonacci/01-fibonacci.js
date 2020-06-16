@@ -14,3 +14,23 @@ function fib(n) {
 }
 
 console.log("The resulting fibonacci number is: " + fib(6));
+
+// Alternative way
+// let memo = {//using an object as a dictionary not as an object like normal
+//     1:0,
+//     2:1,
+// }
+
+
+// let fib = (n) => {
+    
+//     if(memo[n] || memo[n] === 0){
+//         return memo[n]
+//     }
+//     else{
+//         memo[n] = fib(n - 1) + fib(n - 2)
+//         return memo[n]
+//     }
+// }
+
+// console.log(fib(10));
