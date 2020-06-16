@@ -7,7 +7,7 @@ function reverseStrOne(someStr) {
     return someStr.split("").reverse().join("");
 }
 
-// Loop Method
+// For-Of Method
 function reverseStrTwo(someStr) {
     let reverse = "";
     for(let char of someStr){
