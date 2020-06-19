@@ -25,10 +25,12 @@ function objectProperties(someObj) {
 }
 
 // For when you don't neccesarily know what properties an object has or if you want the easy way
-// function objectProperties(someObj) {
+function objectProperties2(someObj) {
 
-//     return Object.values(someObj);
+    return Object.values(someObj);
     
-// }
+}
 
 console.log(objectProperties(testObj));
+
+console.log(objectProperties2(testObj));

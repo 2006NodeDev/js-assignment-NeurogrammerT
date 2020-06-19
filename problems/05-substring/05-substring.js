@@ -4,29 +4,6 @@ Return the substring contained between startIndex (inclusive) and endIndex (excl
 If incorrect input is entered, throw an exception stating the input was incorrect.
 For example substring('hello', 0, 3) should give 'hel' */
 
-// function substring(someStr, startIndex, endIndex) {
-
-//     if (someStr != String) return console.log("You did not enter a valid string!");
-    
-//     if (startIndex != Number) return console.log("You did not enter a valid start number!");
-    
-//     if (endIndex != Number) return console.log("You did not enter a valid end number!");
-
-//     if (substring(startIndex) > substring(someStr.sizegth)) {
-        
-//         console.log("You have input an invalid number!");
-        
-//     } else {
-        
-//         if (someStr === "") return "Undefined";
-
-//         return substring(someStr.substring(substring(startIndex), substring(endIndex)));
-//     }
-    
-//     console.log(substring("Garfield", 3, 5));
-
-// }
-
 function substring(someStr, startIndex, endIndex) {
     
     try{

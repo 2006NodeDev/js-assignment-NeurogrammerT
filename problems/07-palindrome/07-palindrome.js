@@ -23,15 +23,15 @@ function isPalindrome(someStr) {
 }
 
 // JS Inbuilt method
-// function isPalindrome(someStr) {
+function isPalindrome2(someStr) {
   
-//     const strippedString = stripLower(someStr);
+    const strippedString = stripLower(someStr);
 
-//     const reverseString = strippedString.split('').reverse().join('');
+    const reverseString = strippedString.split('').reverse().join('');
 
-//     return reverseString == strippedString;
+    return reverseString == strippedString;
 
-// }
+}
 
 console.log(isPalindrome('racecar'));
 
@@ -40,3 +40,7 @@ console.log(isPalindrome('Racecar'));
 console.log(isPalindrome("racecar!"));
 
 console.log(isPalindrome('carrot'));
+
+console.log(isPalindrome2('racecar'));
+
+console.log(isPalindrome2('matchbox'));
