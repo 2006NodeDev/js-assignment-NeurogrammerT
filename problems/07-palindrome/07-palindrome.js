@@ -4,7 +4,7 @@ Return true if someStr is a palindrome, otherwise return false */
  
 const stripLower = (someStr) => someStr.toLowerCase().replace(/[\W_]/g, '');
 
-// Loop Method
+// Loop Method 
 function isPalindrome(someStr) {
   
     const strippedString = stripLower(someStr);

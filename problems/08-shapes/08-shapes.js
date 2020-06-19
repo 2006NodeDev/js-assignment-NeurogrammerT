@@ -19,7 +19,7 @@ Example for printShape("Diamond", 5, "*");
 *****
  ***
   * 
-*/
+*/ 
 
 function square(height, character) {
   

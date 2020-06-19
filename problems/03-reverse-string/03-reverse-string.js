@@ -2,7 +2,7 @@
 Define function: reverseStr(someStr)
 Reverse and return the String. */
 
-// Reverse() Method
+// Reverse() Method 
 function reverseStrOne(someStr) {
     return someStr.split("").reverse().join("");
 }
